@@ -39,7 +39,7 @@ class Basket extends React.Component {
   render() {
 
     const fruitList = this.filterFruits().map(fruit => {
-      return <Item fruitEmoji={fruit.emoji} fruitName={fruit.type} />;
+      return <Item id={fruit.id} fruitEmoji={fruit.emoji} fruitName={fruit.type} />;
     });
 
     console.log("fruitList is: " + fruitList);
